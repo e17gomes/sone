@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import { ThemeProvider } from "@/app/providers/theme-provider";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export const metadata: Metadata = {
 	title: "Sone",
@@ -21,8 +22,8 @@ export default function RootLayout({
 					attribute={"class"}
 					defaultTheme={"system"}
 					enableSystem
-					disableTransitionOnChange
 				>
+          <ThemeToggle className="absolute right-2 top-1"/>
 					{children} 
 				</ThemeProvider>
 			</body>

@@ -21,9 +21,7 @@ export const WelcomeComponent = () => {
 				<CardTitle>
 					<h1 className="flex flex-col items-center justify-center select-none">
 						Welcome to{" "}
-						<span className="text-8xl bg-clip-text bg-gradient-to-br from-blue-400 via-blue-200 to-blue-600 text-transparent">
-							Sone
-						</span>
+
 					</h1>
 				</CardTitle>
 				<CardDescription className="text-center">
@@ -48,7 +46,7 @@ export const WelcomeComponent = () => {
 				</Link>
 			</CardContent>
 			<CardFooter className="flex items-center justify-center space-x-14 w-full text-sm">
-				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center">
+				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center cursor-pointer hover:scale-110 hover:shadow-md shadow-blue-400 ease-in-out duration-500">
 					<CardContent className="font-semibold flex flex-col items-center justify-center gap-2 p-0">
 						<span>
 							Assist you on problems
@@ -56,7 +54,7 @@ export const WelcomeComponent = () => {
 						<HandHelping className="text-blue-400"/>
 					</CardContent>
 				</Card>
-				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center">
+				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center cursor-pointer hover:scale-110 hover:shadow-md shadow-blue-400 ease-in-out duration-500">
 					<CardContent className="font-semibold flex flex-col items-center justify-center gap-2 p-0">
 						<span>
 							Teach and help
@@ -64,7 +62,7 @@ export const WelcomeComponent = () => {
 						<Shapes className="text-blue-400"/>
 					</CardContent>
 				</Card>
-				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center">
+				<Card className="h-28 w-48 border-2 border-blue-200 flex items-center justify-center cursor-pointer hover:scale-110 hover:shadow-md shadow-blue-400 ease-in-out duration-500">
 					<CardContent className="font-semibold flex flex-col items-center justify-center gap-2 p-0">
 						<span>
 							Make revisions for you

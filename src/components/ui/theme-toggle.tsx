@@ -6,12 +6,15 @@ import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 
+interface TypeThemeToggle {
+  className?: string
+}
 
-export function ThemeToggle() {
+export function ThemeToggle({className}: TypeThemeToggle) {
   const { theme, setTheme } = useTheme()
   const changeTheme = () => setTheme(theme === "dark"? "light" : "dark");
   return (
-        <Button className="rounded-full" variant="outline" size="icon" onClick={changeTheme}>
+        <Button className={`rounded-full ${className}`} variant="outline" size="icon" onClick={changeTheme}>
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
         </Button>
